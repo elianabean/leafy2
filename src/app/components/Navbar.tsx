@@ -4,7 +4,7 @@ export default function Navbar() {
       return (
             <nav
     id="navbar"
-    className="w-full bg-white top-0 flex items-center justify-between px-16 py-6 z-50 sticky border-b-2 border-green-700"
+    className="w-full bg-white top-0 flex items-center justify-between px-16 py-6 z-50 sticky border-b-2 border-green-700 md:h-[10vh]"
     >
     <a href="/">
         <div className="flex items-center">
