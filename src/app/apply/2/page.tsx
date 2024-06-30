@@ -50,7 +50,7 @@ export default function GrowWithUs() {
   const router = useRouter();
 
   // Function that handles the form submission
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     // Prevent the default behavior of form submission
     e.preventDefault();
 
