@@ -4,11 +4,11 @@ import Image from 'next/image'
 export default function First() {
     return (
     <div className="w-[100vw]">
-        <div className="absolute right-0 top-0 h-[100vh] flex flex-col justify-start z-20 pt-[10vh]">
+        <div className="absolute right-0 top-0 h-[100vh] flex flex-col justify-end pb-[20%] md:pb-0 md:justify-center z-20 pt-[10vh] ">
             <Model></Model>
         </div>
 
-        <div className="h-[80svh] absolute w-[100vw] flex flex-col justify-center overflow-x-hidden font-semibold"> 
+        <div className="h-[90svh] absolute w-[100vw] flex flex-col justify-center overflow-x-hidden font-semibold "> 
         <div
             className="absolute -top-16 -right-16 md:top-1/4 md:right-1/4 w-72 h-72 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(63,169,41,0.8)_0%,rgba(255,255,255,0.00)_100%)] md:bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(63,169,41,0.6)_0%,rgba(255,255,255,0.00)_100%)] mix-blend-multiply rounded-full filter blur-xl opacity-30 animate-blob"
         >
@@ -63,16 +63,6 @@ export default function First() {
                 data-aos-duration="2000"
                 data-aos-delay="2000">Apply Now</a>
             </div>
-        </div>
-
-        <div
-            className="md:w-[80vw] absolute bottom-[-2px] md:right-0 z-10 overflow-hidden"
-        >
-            <img
-            src="/images/backgrounds/indexmobile.png"
-            className="scale-150 origin-bottom w-full max-h-full object-cover object-bottom md:hidden"
-            alt="Background"
-            />
         </div>
         </div>
     </div>
