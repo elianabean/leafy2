@@ -5,7 +5,7 @@ export default function Navbar() {
       return (
             <nav
     id="navbar"
-    className="w-full bg-white top-0 flex items-center justify-between px-16 py-6 z-50 sticky border-b-2 border-green-700 md:h-[10vh]"
+    className="w-full bg-white top-0 flex items-center justify-between px-16 py-6 z-50 sticky border-b-2 border-green-700 md:h-[10vh] text-[18px]"
     >
     <a href="/">
         <div className="flex items-center">
@@ -50,18 +50,6 @@ export default function Navbar() {
         <Link href="/careers" className="mr-4">
         <p className="relative group hover:text-primary">
             <span>Careers</span>
-            <span
-            className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
-            ></span>
-            <span
-            className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
-            ></span>
-        </p>
-        </Link>
-
-        <Link href="/apply/2" className="mr-4">
-        <p className="relative group hover:text-primary">
-            <span>Join Us</span>
             <span
             className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
             ></span>

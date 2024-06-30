@@ -1,5 +1,6 @@
 import { benefits } from "../websiteInfo";
 import Script from 'next/script';
+import Image from 'next/image'
 
 export default function Fifth() {
     return (
@@ -15,7 +16,8 @@ export default function Fifth() {
         <div key={index} className="flex flex-col items-start pb-4 pt-8 px-4 md:px-16 border-b border-gray-300 last:border-b-0">
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center text-center">
-              <img src={benefit.icon} alt="Icon" className="w-10 h-10" />
+            <Image src={benefit.icon} width={40} height={40}
+      alt="Icon"/>
               <p className="text-xl ml-2">{benefit.title}</p>
             </div>
             <button className="expand-btn text-4xl transition-transform duration-500 transform rotate-0">
@@ -27,7 +29,7 @@ export default function Fifth() {
             {benefit.description}
           </p>
 
-          <Script strategy="afterInteractive">
+          <Script id="expandButton" strategy="afterInteractive">
         {`
             document.querySelectorAll(".expand-btn").forEach((btn) => {
     btn.addEventListener("click", () => {

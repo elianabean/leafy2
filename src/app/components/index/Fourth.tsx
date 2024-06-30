@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 export default function Fourth() {
     return (
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:grid-rows-1">
   <div className="bg-secondary md:py-16">
     <div className="flex items-center justify-center py-24">
       <div className="flex flex-col items-center md:items-start md:w-[60%]">
-        <img src="/images/other/logo.png" alt="Logo" className="w-16 h-16" />
+        <Image src="/images/other/logo.png" alt="Logo" width={64} height={64} ></Image>
         <h1 className="text-5xl md:text-6xl font-bold mt-6">Join our</h1>
         <h1 className="text-5xl md:text-6xl font-bold">
           <em className="not-italic text-primary">team</em>.

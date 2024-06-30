@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function First() {
     return (
@@ -11,10 +12,7 @@ export default function First() {
     >Apply Now</Link>
   
   <div className="absolute inset-0 -z-10 opacity-50">
-    <img
-      src="/images/backgrounds/careers.jpg"
-      className="w-full h-full object-cover blur-sm"
-    />
+    <Image src="/images/backgrounds/careers.jpg" fill={true} alt="Background" className="w-full h-full object-cover blur-sm"></Image>
   </div>
 </div>
     )
