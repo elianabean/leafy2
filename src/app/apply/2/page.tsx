@@ -50,10 +50,7 @@ export default function GrowWithUs() {
   const router = useRouter();
 
   // Function that handles the form submission
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    // Prevent the default behavior of form submission
-    e.preventDefault();
-
+  const handleSubmit = async () => {
     let data: { [key: string]: string } = {};
     // Grab the data from the form and store it in an object
     inputNames.forEach((input) => {
