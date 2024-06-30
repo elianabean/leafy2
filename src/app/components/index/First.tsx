@@ -4,8 +4,6 @@ import Image from 'next/image'
 export default function First() {
     return (
     <div className="w-[100vw]">
-        
-
         <div className="absolute ">
         <div className="h-[90svh] relative w-[100vw] flex flex-col justify-center overflow-x-hidden font-semibold overflow-y-hidden md:overflow-y-auto "> 
             <div
@@ -27,7 +25,7 @@ export default function First() {
                 className="md:pl-[10vw] flex flex-col items-center justify-center md:items-start md:w-[50vw] text-center md:text-start h-[30vh] md:h-fit"
             >
                 <h1
-                className="w-full md:text-7xl text-5xl text-shadow font-workSans font-bold tracking-tight"
+                className="w-full md:text-7xl text-5xl text-shadow font-bold tracking-tight font-workSans"
                 data-aos="fade-right"
                 data-aos-delay="500"
                 data-aos-duration="2000"
@@ -35,7 +33,7 @@ export default function First() {
                 Plant your
                 </h1>
                 <h1
-                className="md:text-7xl text-5xl text-primary text-shadow font-workSans font-bold tracking-tight"
+                className="md:text-7xl text-5xl text-primary text-shadow font-bold tracking-tight"
                 data-aos="fade-right"
                 data-aos-delay="750"
                 data-aos-duration="2000"
@@ -43,14 +41,14 @@ export default function First() {
                 future
                 </h1>
                 <p
-                className="text-lg whitespace-normal mt-4 md:pr-32 font-workSans"
+                className="text-lg whitespace-normal mt-4 md:pr-32 "
                 data-aos="fade-up"
                 data-aos-delay="1250"
                 data-aos-duration="2000"
                 >
                 Industry leaders in house plant development and maintenance.
                 </p>
-                <div className="mt-4 flex space-x-4 font-workSans font-normal text-[18px]">
+                <div className="mt-4 flex space-x-4 font-normal text-[18px]">
                 <a
                     href="/careers"
                     className="px-4 py-2 bg-white text-black rounded shadow-md shadow-gray-500"
