@@ -37,14 +37,14 @@ export default function Third() {
     >
       <img
         src="/images/other/window.jpg"
-        className="w-3/5 h-3/5 object-cover object-top rounded-full top-0 left-0 absolute"
+        className="w-3/4 h-3/4 object-cover object-top rounded-full top-0 left-0 absolute"
       />
       <img
         src="/images/other/pots.jpg"
         className="w-3/4 h-3/4 object-cover object-top rounded-full bottom-0 right-0 absolute"
       />
     </div>
-    <div className="mt-4 md:mt-0 md:ml-4">
+    <div className="mt-4 md:mt-0 md:ml-4 md:max-w-[30vw]">
       <h2 className="text-4xl text-center md:text-left font-semibold">
         What we value
       </h2>
