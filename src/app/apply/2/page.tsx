@@ -7,6 +7,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { db } from "@/firebaseConfig";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 const inputs = [
   "First Name",
   "Last Name",
@@ -46,9 +47,15 @@ const required = [
 ];
 
 export default function GrowWithUs() {
+  const router = useRouter();
+
+  // Function that handles the form submission
   const handleSubmit = async (e) => {
+    // Prevent the default behavior of form submission
     e.preventDefault();
+
     let data: { [key: string]: string } = {};
+    // Grab the data from the form and store it in an object
     inputNames.forEach((input) => {
       const element = document.getElementById(input) as HTMLInputElement;
       if (element) {
@@ -56,11 +63,11 @@ export default function GrowWithUs() {
       }
     });
 
-    console.log(data);
-    // Send data to firebase
-    const docRef = await addDoc(collection(db, "applications"), data);
+    // Send data to firebase and wait for the response
+    await addDoc(collection(db, "applications"), data);
 
-    console.log("Document written with ID: ", docRef.id);
+    // Once the document is added, redirect the user to the next page
+    router.push("/apply/3");
   };
 
   return (
