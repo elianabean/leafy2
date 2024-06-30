@@ -2,7 +2,7 @@ export default function Sixth() {
     return (
         <div className="flex flex-col items-center text-center pb-32 px-8">
   <h2 className="text-4xl text-center md:text-left font-semibold">
-    We're ready for you
+    We&apos;re ready for you
   </h2>
   <p className="mt-4">
     Become part of the future of interior design and home plant integration.

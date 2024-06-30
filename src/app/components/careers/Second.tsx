@@ -5,7 +5,7 @@ export default function Second() {
             <h1 className="md:text-6xl text-4xl font-bold">
                 Are you <em className="not-italic underline text-primary">passionate</em>?
             </h1>
-            <p className="text-lg whitespace-normal mt-4">We're the right place for you.</p>
+            <p className="text-lg whitespace-normal mt-4">We&apos;re the right place for you.</p>
             </div>
             <img src="/images/other/divider.svg" className="w-full" />
         </div>
