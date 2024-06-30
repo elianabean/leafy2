@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import ApplyLayout from "../../components/ApplyLayout";
 import { jobs } from "../../components/websiteInfo";
 import Script from 'next/script';
@@ -6,9 +6,9 @@ import {Button} from "@nextui-org/button";
 import Link from 'next/link'
 
 export default function Apply1() {
-    return (
-        <ApplyLayout>
-            <Script id="getParams" strategy="beforeInteractive">
+  return (
+    <ApplyLayout>
+      <Script id="getParams" strategy="beforeInteractive">
         {`
             window.onload = function () {
             const urlSearchParams = new URLSearchParams(window.location.search);
@@ -64,7 +64,6 @@ export default function Apply1() {
       ))
     }
       </div>
-            
-        </ApplyLayout>
-    )
+    </ApplyLayout>
+  );
 }
