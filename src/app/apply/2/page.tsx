@@ -89,8 +89,8 @@ export default function GrowWithUs() {
               required
             >
               <option value=""></option>
-              {jobs.map((job) => (
-                <option id={job.id} value={job.id}>
+              {jobs.map((job, index) => (
+                <option id={job.id} value={job.id} key={index}>
                   {job.name}
                 </option>
               ))}

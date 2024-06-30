@@ -9,8 +9,7 @@ export default function Fifth() {
     data-aos-duration="2000"
   >
     <em className="not-italic text-primary">Trusted</em> and <em
-      className="not-italic text-primary">Loved</em
-    > by Customers
+      className="not-italic text-primary">Loved</em> by Customers
   </h1>
   <div
     className="w-full flex flex-col md:flex-row items-center justify-between mt-16 gap-16"

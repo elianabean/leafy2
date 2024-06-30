@@ -11,8 +11,8 @@ export default function Fifth() {
   </p>
   <div className="mx-8 md:mx-48 mt-8 bg-tertiary rounded-md">
     {
-      benefits.map((benefit) => (
-        <div className="flex flex-col items-start pb-4 pt-8 px-4 md:px-16 border-b border-gray-300 last:border-b-0">
+      benefits.map((benefit, index) => (
+        <div key={index} className="flex flex-col items-start pb-4 pt-8 px-4 md:px-16 border-b border-gray-300 last:border-b-0">
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center text-center">
               <img src={benefit.icon} alt="Icon" className="w-10 h-10" />

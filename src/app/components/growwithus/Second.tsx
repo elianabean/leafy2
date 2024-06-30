@@ -8,8 +8,8 @@ export default function Second() {
   </h1>
   <div className="w-full gap-8 mt-8 flex flex-col">
     {
-      jobs.map((job) => (
-        <div className="py-10 px-10 grid grid-cols-1 md:grid-cols-8 gap-4 rounded-md bg-card shadow-md items-center text-start">
+      jobs.map((job, index) => (
+        <div key={index} className="py-10 px-10 grid grid-cols-1 md:grid-cols-8 gap-4 rounded-md bg-card shadow-md items-center text-start">
           <h2 className="font-medium text-2xl md:col-span-3">{job.name}</h2>
           <div className="col-span-4 md:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-2">
             <div className="flex items-center">

@@ -28,8 +28,8 @@ export default function Apply1() {
       </Script>
       <div className="bg-transparent">
       {
-      jobs.map((job) => (
-        <div id={job.id} className="hidden shadow-lg">
+      jobs.map((job, index) => (
+        <div id={job.id} className="hidden shadow-lg" key={index}>
           <div className="flex-col bg-tertiary items-center justify-center text-center py-16 rounded-t-lg">
             <h1 className="text-3xl font-semibold">{job.name}</h1>
           </div>
@@ -38,20 +38,20 @@ export default function Apply1() {
             <p>{job.description}</p>
             <h2 className="text-2xl text-primary mt-8">Job Responsibilities</h2>
             <ul className="list-disc ml-6">
-              {job.responsibilities.map((responsibility) => (
-                <li>{responsibility}</li>
+              {job.responsibilities.map((responsibility, index) => (
+                <li key={index}>{responsibility}</li>
               ))}
             </ul>
             <h2 className="text-2xl text-primary mt-8">Required Qualifications</h2>
             <ul className="list-disc ml-6">
-              {job.required.map((requirement) => (
-                <li>{requirement}</li>
+              {job.required.map((requirement, index) => (
+                <li key={index}>{requirement}</li>
               ))}
             </ul>
             <h2 className="text-2xl text-primary mt-8">Preferred Qualifications</h2>
             <ul className="list-disc ml-6">
-              {job.preferred.map((preference) => (
-                <li>{preference}</li>
+              {job.preferred.map((preference, index) => (
+                <li key={index}>{preference}</li>
               ))}
             </ul>
             <div className="flex justify-center md:justify-end">
