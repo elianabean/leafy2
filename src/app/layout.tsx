@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} overflow-x-hidden bg-white`}>
+      <body
+        className={`${workSans.variable} overflow-x-hidden bg-white light text-black`}
+      >
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
