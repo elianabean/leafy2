@@ -27,7 +27,7 @@ export default function Fifth() {
             {benefit.description}
           </p>
 
-          <Script id="my-script" strategy="afterInteractive">
+          <Script strategy="afterInteractive">
         {`
             document.querySelectorAll(".expand-btn").forEach((btn) => {
     btn.addEventListener("click", () => {

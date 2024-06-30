@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Script from "next/script"
 
 export default function Navbar() {
       return (
@@ -80,19 +81,28 @@ export default function Navbar() {
     {/* Mobile Nav Menu opening from the Side */}
     <div
         id="mobmenu"
-        className="flex-col justify-end text-end absolute top-0 right-0 bg-card border-primary border-l-2 border-b-2 p-8 pt-16 hidden z-40"
+        className="flex-col justify-end text-end absolute top-0 right-0 bg-card border-primary border-l-2 border-b-2 p-8 pt-16 hidden z-40 h-[100vh]"
     >
         <div className="flex flex-col items-end gap-4">
         {/* Navlinks */}
-        <a href="/" className="mr-4">Home</a>
-        <a href="/careers" className="mr-4">Careers</a>
-        <a href="/apply/2" className="mr-4">Join Us</a>
+        <Link href="/" className="mr-4">Home</Link>
+        <Link href="/careers" className="mr-4">Careers</Link>
+        <Link href="/apply/2" className="mr-4">Join Us</Link>
 
         {/* Button */}
-        <a href="/growwithus" className="px-4 py-2 bg-primary text-white rounded"
-            >Grow With Us</a>
+        <Link href="/growwithus" className="px-4 py-2 bg-primary text-white rounded"
+            >Grow With Us</Link>
         </div>
     </div>
+    <Script strategy="afterInteractive">
+        {`
+        const menuButton = document.querySelector("button");
+  menuButton.addEventListener("click", () => {
+    const mobmenu = document.getElementById("mobmenu");
+    mobmenu.classList.toggle("hidden");
+  });
+        `}
+      </Script>
     </nav>
 
       );
