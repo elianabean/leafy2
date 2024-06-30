@@ -8,6 +8,9 @@ import { db } from "@/firebaseConfig";
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Button } from "@nextui-org/button";
+
 const inputs = [
   "First Name",
   "Last Name",
@@ -169,14 +172,8 @@ export default function GrowWithUs() {
               className="flex justify-center
           md:justify-end"
             >
-              <button
-                onClick={(e) => handleSubmit(e)}
-                type="button"
-                className="bg-primary text-white rounded-md px-2
-          md:px-4 py-2 text-center mt-6 inline-block shadow-lg"
-              >
-                Submit
-              </button>
+
+              <Link href="/apply/2"><Button onClick={(e) => handleSubmit(e)} color="primary" className=" text-white rounded-md px-2 md:px-4 py-2 text-center mt-6 inline-block text-[18px]" radius="md">Submit</Button></Link>
             </div>
           </div>
         </div>

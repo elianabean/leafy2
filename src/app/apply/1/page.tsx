@@ -2,6 +2,8 @@
 import ApplyLayout from "../../components/ApplyLayout";
 import { jobs } from "../../components/websiteInfo";
 import Script from 'next/script';
+import {Button} from "@nextui-org/button";
+import Link from 'next/link'
 
 export default function Apply1() {
     return (
@@ -55,12 +57,7 @@ export default function Apply1() {
               ))}
             </ul>
             <div className="flex justify-center md:justify-end">
-              <a
-                href="/apply/2"
-                className="bg-primary text-white rounded-md px-2 md:px-4 py-2 text-center mt-6 inline-block"
-              >
-                Apply Now
-              </a>
+              <Link href="/apply/2"><Button color="primary" className=" text-white rounded-md px-2 md:px-4 py-2 text-center mt-6 inline-block text-[18px]" radius="md">Apply</Button></Link>
             </div>
           </div>
         </div>

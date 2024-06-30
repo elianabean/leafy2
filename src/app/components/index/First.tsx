@@ -1,5 +1,7 @@
 import Model from "../model/Scene";
 import Image from 'next/image'
+import {Button} from "@nextui-org/button";
+import Link from 'next/link'
 
 export default function First() {
     return (
@@ -49,18 +51,17 @@ export default function First() {
                 Industry leaders in house plant development and maintenance.
                 </p>
                 <div className="mt-4 flex space-x-4 font-normal text-[18px]">
-                <a
+                <Link
                     href="/careers"
-                    className="px-4 py-2 bg-white text-black rounded shadow-md shadow-gray-500"
                     data-aos="fade-up"
                     data-aos-duration="2000"
-                    data-aos-delay="1750">Explore Careers</a>
-                <a
+                    data-aos-delay="1750"><Button color="primary" className="text-black bg-white shadow-md shadow-gray-300 text-[18px] px-4 py-6" radius="md">Explore Careers</Button>
+                    </Link>
+                <Link
                     href="/growwithus"
-                    className="px-4 py-2 bg-primary text-white rounded shadow-md shadow-gray-500"
                     data-aos="fade-up"
                     data-aos-duration="2000"
-                    data-aos-delay="2000">Apply Now</a>
+                    data-aos-delay="2000"><Button color="primary" className="px-4 py-6 bg-primary text-white shadow-md shadow-gray-300 text-[18px]" radius="md">Apply Now</Button></Link>
                 </div>
             </div>
             <div className="relative md:right-0 md:top-0 h-[30vh] flex flex-col justify-center md:justify-center z-20  ">
