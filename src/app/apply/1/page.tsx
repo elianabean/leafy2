@@ -4,15 +4,9 @@ import { jobs } from "../../components/websiteInfo";
 import Script from "next/script";
 
 export default function Apply1() {
-<<<<<<< HEAD
   return (
     <ApplyLayout>
-      <Script id="my-script2" strategy="beforeInteractive">
-=======
-    return (
-        <ApplyLayout>
-            <Script id="getParams" strategy="beforeInteractive">
->>>>>>> d2723913e327f8d865c6b64c9429fb7e47bbc375
+      <Script id="getParams" strategy="beforeInteractive">
         {`
             window.onload = function () {
             const urlSearchParams = new URLSearchParams(window.location.search);
