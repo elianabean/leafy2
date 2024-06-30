@@ -51,7 +51,6 @@ export default function GrowWithUs() {
 
   // Function that handles the form submission
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    console.log(e);
     e.preventDefault();
     let data: { [key: string]: string } = {};
     // Grab the data from the form and store it in an object
