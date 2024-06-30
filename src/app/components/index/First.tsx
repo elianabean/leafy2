@@ -42,28 +42,26 @@ export default function First() {
             future
             </h1>
             <p
-            className="text-lg whitespace-normal mt-4 md:pr-32 font-nunito"
+            className="text-lg whitespace-normal mt-4 md:pr-32 font-workSans"
             data-aos="fade-up"
             data-aos-delay="1250"
             data-aos-duration="2000"
             >
             Industry leaders in house plant development and maintenance.
             </p>
-            <div className="mt-4 flex space-x-4 font-sans font-normal">
+            <div className="mt-4 flex space-x-4 font-workSans font-normal">
             <a
                 href="/careers"
                 className="px-4 py-2 bg-white text-black rounded shadow-md shadow-gray-500"
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                data-aos-delay="1750">Explore Careers</a
-            >
+                data-aos-delay="1750">Explore Careers</a>
             <a
                 href="/growwithus"
                 className="px-4 py-2 bg-primary text-white rounded shadow-md shadow-gray-500"
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                data-aos-delay="2000">Apply Now</a
-            >
+                data-aos-delay="2000">Apply Now</a>
             </div>
         </div>
 

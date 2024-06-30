@@ -35,7 +35,9 @@ const config: Config = {
       },
       animation: {
         blob: "blob 7s infinite",
-      },
+      }, fontFamily: {
+        'workSans': ['var(--font-workSans)'],
+      }
     },
   },
   plugins: [],

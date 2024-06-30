@@ -12,8 +12,7 @@ export default function Fourth() {
         <a
           href="/growwithus"
           className="px-4 py-2 bg-primary text-white rounded shadow-md shadow-gray-500 mt-6"
-          >Apply Now</a
-        >
+          >Apply Now</a>
       </div>
     </div>
   </div>

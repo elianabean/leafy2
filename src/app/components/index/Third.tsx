@@ -17,14 +17,12 @@ export default function Third() {
         We are Leafy.
       </h2>
       <p
-        className="text-lg mt-2 font-montserrat tracking-tight"
+        className="text-lg mt-2 "
         data-aos="fade-right"
         data-aos-delay="250"
         data-aos-duration="1000"
       >
-        We provide <em className="not-italic text-primary font-bold">innovative</em
-        >, <em className="not-italic text-primary font-bold">modern</em>
-        solutions to sprucing up your space with house plants. Whether it be to lighten
+        We provide <em className="not-italic text-primary font-bold">innovative</em>, <em className="not-italic text-primary font-bold">modern</em> solutions to sprucing up your space with house plants. Whether it be to lighten
         up an office, or liven up a living area, we have a package for you. From
         the initial design, to the plant design, to the final installation in your
         home, we will be with you every step of the way.
@@ -64,16 +62,14 @@ export default function Third() {
         Consultations
       </h2>
       <p
-        className="text-lg mt-2 font-montserrat tracking-tight"
+        className="text-lg mt-2"
         data-aos="fade-left"
         data-aos-delay="250"
         data-aos-duration="1000"
       >
         Schedule a consultation today with our team of top designers. From
         color, aura, to even pot style, we have a design for you. Show us your
-        space and tell us your ideas, and we will guide you on how to create the
-
-        <em className="not-italic text-primary font-bold">home of your dreams</em>.
+        space and tell us your ideas, and we will guide you on how to create the <em className="not-italic text-primary font-bold">home of your dreams</em>.
       </p>
     </div>
   </div>
@@ -92,14 +88,12 @@ export default function Third() {
         Designs
       </h2>
       <p
-        className="text-lg mt-2 font-montserrat tracking-tight"
+        className="text-lg mt-2"
         data-aos="fade-right"
         data-aos-delay="250"
         data-aos-duration="1000"
       >
-        Not feeling any of our existing designs? Order a <em
-          className="not-italic text-primary font-bold">custom plant</em
-        > designed by our team of specialists that perfectly match your desired environment.
+        Not feeling any of our existing designs? Order a <em className="not-italic text-primary font-bold">custom plant</em> designed by our team of specialists that perfectly match your desired environment.
         You have control over each step in the design process.
       </p>
     </div>
