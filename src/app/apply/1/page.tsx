@@ -28,8 +28,8 @@ export default function Apply1() {
       </Script>
       <div className="bg-transparent">
       {
-      jobs.map((job) => (
-        <div id={job.id} className="hidden shadow-lg">
+      jobs.map((job, index) => (
+        <div id={job.id} className="hidden shadow-lg" key={index}>
           <div className="flex-col bg-tertiary items-center justify-center text-center py-16 rounded-t-lg">
             <h1 className="text-3xl font-semibold">{job.name}</h1>
           </div>
