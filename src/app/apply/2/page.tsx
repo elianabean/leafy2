@@ -50,7 +50,9 @@ export default function GrowWithUs() {
   const router = useRouter();
 
   // Function that handles the form submission
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    console.log(e);
+    e.preventDefault();
     let data: { [key: string]: string } = {};
     // Grab the data from the form and store it in an object
     inputNames.forEach((input) => {
@@ -73,7 +75,7 @@ export default function GrowWithUs() {
         <div className="flex-col bg-tertiary items-center justify-center text-center py-16 rounded-t-lg">
           <h1 className="text-3xl font-semibold">Leafy Application</h1>
         </div>
-        <form id="appForm">
+        <div id="appForm">
           <div className="flex-col bg-card items-center md:items-start px-4 md:px-20 py-12">
             <h2 className="text-2xl text-primary mb-4">
               Position<em className="text-xs not-italic text-red-500"> *</em>
@@ -167,17 +169,17 @@ export default function GrowWithUs() {
               className="flex justify-center
           md:justify-end"
             >
-              <a
+              <button
+                onClick={(e) => handleSubmit(e)}
+                type="button"
                 className="bg-primary text-white rounded-md px-2
           md:px-4 py-2 text-center mt-6 inline-block shadow-lg"
               >
-                <button type="submit" onClick={handleSubmit}>
-                  Submit
-                </button>
-              </a>
+                Submit
+              </button>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </ApplyLayout>
   );
