@@ -82,7 +82,7 @@ export default function Navbar() {
             >Grow With Us</Link>
         </div>
     </div>
-    <Script strategy="afterInteractive">
+    <Script id="mobileToggle" strategy="afterInteractive">
         {`
         const menuButton = document.querySelector("button");
   menuButton.addEventListener("click", () => {

@@ -6,7 +6,7 @@ import Script from 'next/script';
 export default function Apply1() {
     return (
         <ApplyLayout>
-            <Script id="my-script2" strategy="beforeInteractive">
+            <Script id="getParams" strategy="beforeInteractive">
         {`
             window.onload = function () {
             const urlSearchParams = new URLSearchParams(window.location.search);
