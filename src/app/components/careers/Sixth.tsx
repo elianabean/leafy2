@@ -10,7 +10,7 @@ export default function Sixth() {
   </p>
   <a
     href="/growwithus"
-    className="px-4 py-2 bg-primary text-white rounded shadow-md shadow-gray-500 mt-4"
+    className="px-4 py-2 text-[18px] bg-primary text-white rounded shadow-md shadow-gray-500 mt-4"
     >Apply Now</a>
 </div>
     ) 

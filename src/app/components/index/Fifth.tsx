@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Fifth() {
     return (
         <div
@@ -19,7 +21,7 @@ export default function Fifth() {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <img src="/images/other/light-bulb.png" alt="Image 1" className="w-16 h-16" />
+        <Image src="/images/other/light-bulb.png" alt="Image 1" width={64} height={64}></Image>
       <h1 className="text-4xl text-primary">Innovation</h1>
       <p className="text-lg">
         We produce new ideas and never-seen-before plant designs.
@@ -30,7 +32,7 @@ export default function Fifth() {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <img src="/images/other/passion.png" alt="Image 1" className="w-16 h-16" />
+        <Image src="/images/other/passion.png" alt="Image 1" width={64} height={64}></Image>
       <h1 className="text-4xl text-primary">Passion</h1>
       <p className="text-lg">
         We love what we do for customers, and we put our all into every design.
@@ -41,7 +43,7 @@ export default function Fifth() {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <img src="/images/other/energy.png" alt="Image 1" className="w-16 h-16" />
+        <Image src="/images/other/energy.png" alt="Image 1" width={64} height={64}></Image>
       <h1 className="text-4xl text-primary">Efficiency</h1>
       <p className="text-lg">
         We prioritize our customers’ time while ensuring top quality.

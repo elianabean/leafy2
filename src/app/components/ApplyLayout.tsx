@@ -15,7 +15,7 @@ export default function ApplyLayout({
                 />
             </div>
         </div>
-        <div className="mt-[-10vh] mx-8 md:mx-40 mb-24 bg-white">
+        <div className="mt-[-10vh] mx-8 md:mx-40 mb-24">
             {children}
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Fourth() {
     return (
         <div>
@@ -9,11 +11,7 @@ export default function Fourth() {
     <div className="bg-secondary px-8 py-16 rounded-md flex-1">
       <div className="flex flex-col md:flex-row items-center justify-center">
         {/* Icon */}
-        <img
-          src="/images/other/light-bulb.png"
-          alt="Light Bulb"
-          className="w-14 h-14"
-        />
+        <Image src="/images/other/light-bulb.png" alt="Light Bulb" width={56} height={56}></Image>
         <h2 className="text-center md:text-start md:ml-2 text-2xl font-medium">
           Innovation
         </h2>
@@ -26,11 +24,8 @@ export default function Fourth() {
     <div className="bg-secondary px-8 py-16 rounded-md flex-1">
       <div className="flex flex-col md:flex-row items-center justify-center">
         {/* Icon */}
-        <img
-          src="/images/other/collab.png"
-          alt="Collaboration"
-          className="w-14 h-14"
-        />
+        <Image src="/images/other/collab.png" alt="Collaboration" width={56} height={56}></Image>
+        
         <h2 className="text-center md:text-start md:ml-2 text-2xl font-medium">
           Collaboration
         </h2>
@@ -44,11 +39,7 @@ export default function Fourth() {
     <div className="bg-secondary px-8 py-16 rounded-md flex-1">
       <div className="flex flex-col md:flex-row items-center justify-center">
         {/* Icon */}
-        <img
-          src="/images/other/increase.png"
-          alt="Fulfillment"
-          className="w-14 h-14"
-        />
+        <Image src="/images/other/increase.png" alt="Fulfillment" width={56} height={56}></Image>
         <h2 className="text-center md:text-start md:ml-2 text-2xl font-medium">
           Fulfillment
         </h2>
