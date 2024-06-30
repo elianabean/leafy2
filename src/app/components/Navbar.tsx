@@ -34,7 +34,7 @@ export default function Navbar() {
     <div id="menu" className="md:flex items-center md:items-center hidden gap-4 font-sans ">
        {/*Navlinks*/} 
         {/* from https://birdeatsbug.com/blog/creating-hover-effects-with-tailwind-css */} 
-        <a href="/" className="mr-4">
+        <Link href="/" className="mr-4">
         <p className="relative group hover:text-primary">
             <span>Home</span>
             <span
@@ -44,10 +44,10 @@ export default function Navbar() {
             className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
             ></span>
         </p>
-        </a>
+        </Link>
 
-        <a href="/careers" className="mr-4 hover:text-primary">
-        <p className="relative group">
+        <Link href="/careers" className="mr-4">
+        <p className="relative group hover:text-primary">
             <span>Careers</span>
             <span
             className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
@@ -56,8 +56,9 @@ export default function Navbar() {
             className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
             ></span>
         </p>
-        </a>
-        <a href="/apply/2" className="mr-4">
+        </Link>
+
+        <Link href="/apply/2" className="mr-4">
         <p className="relative group hover:text-primary">
             <span>Join Us</span>
             <span
@@ -67,13 +68,13 @@ export default function Navbar() {
             className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:transition-all duration-200 mt-0.5"
             ></span>
         </p>
-        </a>
+        </Link>
 
         {/* Button */}
-        <a
+        <Link
         href="/growwithus"
         className="px-4 py-2 bg-primary text-white rounded hover:bg-white hover:text-primary hover:shadow-[inset_0_0_0_0.5px_#3FA929] hover:transition-all duration-200"
-        >Grow With Us</a>
+        >Grow With Us</Link>
     </div>
 
     {/* Mobile Nav Menu opening from the Side */}
