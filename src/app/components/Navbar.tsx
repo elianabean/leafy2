@@ -32,7 +32,7 @@ export default function Navbar() {
         </svg>
     </button>
 
-    <div id="menu" className="md:flex items-center md:items-center hidden gap-4 font-sans ">
+    <div id="menu" className="md:flex items-center md:items-center hidden gap-4 ">
        {/*Navlinks*/} 
         {/* from https://birdeatsbug.com/blog/creating-hover-effects-with-tailwind-css */} 
         <Link href="/" className="mr-4">
@@ -82,7 +82,7 @@ export default function Navbar() {
             >Grow With Us</Link>
         </div>
     </div>
-    <Script strategy="afterInteractive">
+    <Script id="mobileToggle" strategy="afterInteractive">
         {`
         const menuButton = document.querySelector("button");
   menuButton.addEventListener("click", () => {
